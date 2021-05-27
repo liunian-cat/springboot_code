@@ -30,6 +30,13 @@ public class HelloController {
 
     }
 
+    @RequestMapping("test")
+    public String test_jacoco() {
+        System.out.println("this is a test for jacoco");
+        return "this is a test for jacoco";
+
+    }
+
     @RequestMapping(value = "/users",method = RequestMethod.GET)
     public @ResponseBody
     Object users(HttpServletResponse response){
